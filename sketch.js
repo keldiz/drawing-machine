@@ -24,6 +24,7 @@ function draw() {
     }
     endShape();
   }
+
   function keyTyped() {
 
     if (key === 's') {
@@ -36,10 +37,9 @@ function draw() {
       beginShape();
       for (let i = 0; i < array.length; i++) {
         // line(array[i][0], array[i][1], array[i + 1][0], array[i + 1][1]);
-        curveVertex(array[i][0], array[i][1])
+        curveVertex(array[i][0], array[i][1]);
+        endShape();
       }
-      endShape();
-
     }
 
     return false;
